@@ -1,9 +1,8 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navMenu = document.querySelector('.nav-menu');
+document.addEventListener('DOMContentLoaded', function() {
+    var menuIcon = document.querySelector('.menu-icon');
+    var navList = document.querySelector('nav ul');
 
-navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('nav-menu_visible');
+    menuIcon.addEventListener('click', function() {
+        navList.classList.toggle('open');
+    });
 });
-
-document.getElementById('footer-year').textContent = new Date().getFullYear();
-document.getElementById('last-modified').textContent = new Date(document.lastModified).toLocaleDateString();
