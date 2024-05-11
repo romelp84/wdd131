@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Information about your place.">
+    <title>PLACE</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header>
+        <h1>Imbabura</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left-column">
+                <picture class="hero">
+                    <source media="(min-width: 740px)" srcset="images/cuicocha.webp">
+                    <source media="(min-width: 500px)" srcset="images/imbabura.webp">
+                    <img src=" images/cuicocha.webp" alt="cuicocha" width="1200" height="500">
+                </picture>
+                <section id="data-card">
+                    <h2>Data</h2>
+                    <table id="data-table">
+                        <tbody>
+                            <tr>
+                                <td class="table-title">Area: </td>
+                                <td>4,785 km²</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Population: </td>
+                                <td>398.000</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Capital: </td>
+                                <td>Ibarra</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Languages: </td>
+                                <td>Spanish, Quichua</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Currency: </td>
+                                <td>US Dollar</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Time Zone: </td>
+                                <td>GMT-5</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Calling Code: </td>
+                                <td>+593 62</td>
+                            </tr>
+                            <tr>
+                                <td class="table-title">Internet TLD: </td>
+                                <td>.ec</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <div class="right-column">
+                <section id="weather-card">
+                    <h2>Weather</h2>
+                    <img id="weather-icon" src="images/weather-64.webp" alt="partly cloudy weather icon">
+                    <table id="weather-table">
+                        <tr>
+                            <td class="table-title">Temperature: </td>
+                            <td id="temp-value">19°F</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Conditions: </td>
+                            <td>Partly Cloudy</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Wind: </td>
+                            <td>19.71 mph</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Wind Chill: </td>
+                            <td id="windchill-factor"></td>
+                        </tr>
+                    </table>
+                </section>
+                <footer>
+                    <p>&copy; <span id="currentyear"></span></p>
+                    <p id="lastModified"></p>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>

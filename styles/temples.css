@@ -50,8 +50,9 @@ footer {
     text-align: center;
 }
 
+/* New CSS for hamburger menu */
 .menu-icon {
-    display: none;
+    display: none; /* Initially hide the hamburger icon */
     cursor: pointer;
     color: #fff;
     font-size: 24px;
@@ -67,11 +68,11 @@ footer {
         background-color: #333;
         width: 100%;
         padding: 10px 0;
-        display: none;
+        display: none; /* Hide the menu items by default */
     }
 
     nav ul.open {
-        display: flex;
+        display: flex; /* Show the menu items when the menu is open */
     }
 
     nav ul li {
@@ -79,6 +80,6 @@ footer {
     }
 
     .menu-icon {
-        display: block;
+        display: block; /* Show the hamburger icon on smaller screens */
     }
 }
