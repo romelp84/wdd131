@@ -121,5 +121,25 @@ footer {
     footer {
         padding-top: 2rem;
         padding-bottom: 2rem;
+
     }
+}
+
+
+/* Existing CSS rules */
+
+#weather-card h2 {
+    padding: 10px;
+    position: relative;
+    left: 0px;
+    text-align: left;
+    background-color: #012641;
+    opacity: 1;
+    width: auto; /* Adjusted width */
+}
+
+#weather-icon {
+    width: 24px; /* Adjusted width for the weather icon */
+    vertical-align: middle; /* Aligning the weather icon vertically */
+    margin-right: 5px; /* Adding some space between the icon and text */
 }

@@ -1,0 +1,123 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.menu-icon {
+    display: none; /* Initially hide the hamburger icon */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #111;
+}
+
+/* Main content styles */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-grid section {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.label {
+    font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive styles */
+.menu-icon {
+    display: none; /* Initially hide the hamburger icon */
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Adjustments for mobile views */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px 0;
+        display: none; /* Hide the menu items by default */
+    }
+
+    nav ul.open {
+        display: flex; /* Show the menu items when the menu is open */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .menu-icon {
+        display: block; /* Show the hamburger icon on smaller screens */
+    }
+}
