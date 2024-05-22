@@ -62,6 +62,13 @@ const temples = [
         area: 70884,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/guayaquil-ecuador/800x500/guayaquil-ecuador-temple-1159057-wallpaper.jpg"
     },
+    {
+        templeName: "Arequipa",
+        location: "Arequipa, Peru",
+        dedicated: "2019, December, 15",
+        area: 26969,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/arequipa-peru/800x500/1-55f6c59ce8f9c093a9c689067f8674335de544e2.jpeg"
+    },
 ];
 
 function createTempleCard(temple) {
