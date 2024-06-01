@@ -1,0 +1,37 @@
+/* css/styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+    color: #FF6347;
+}
+
+header {
+    background-color: #FFD700;
+    padding: 10px 0;
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #FFD700;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+div {
+    margin: 5px 0;
+}
