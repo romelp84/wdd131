@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuadorian Recipes Delight</title>
+    <meta name="description" content="WDD 131 - Final Project. Romel Patino.">
+    <meta name="author" content="Romel Patino">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/recipes.css">
+</head>
+<body>
+    <header>
+        <h1>Ecuadorian Recipes Delight</h1>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="recipes.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="hamburger" class="hamburger">&#9776;</button>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for recipes...">
+        </div>
+    </header>
+    <main>
+        <h1>Papas con Cuero Recipe</h1>
+        <img src="images/papaconcuero.jpg" alt="Papas con Cuero Header Image" width="600" height="200">
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>4 large potatoes</li>
+                <li>1 lb (450 g) pork belly</li>
+                <li>2 red onions, thinly sliced</li>
+                <li>2 tomatoes, diced</li>
+                <li>4 garlic cloves, minced</li>
+                <li>1 tablespoon ground cumin</li>
+                <li>Salt and pepper to taste</li>
+                <li>Oil for frying</li>
+            </ul>
+        </section>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Peel and slice potatoes into thin rounds. Set aside.</li>
+                <li>Cut pork belly into small pieces. In a large pot, heat oil over medium heat and fry pork belly until browned and crispy. Remove and set aside.</li>
+                <li>In the same pot, add sliced onions, tomatoes, minced garlic, ground cumin, salt, and pepper. Cook until onions are soft.</li>
+                <li>Add sliced potatoes to the pot and stir to combine with the onion mixture. Cook until potatoes are tender.</li>
+                <li>Return the fried pork belly to the pot and mix well. Cook for another few minutes until heated through.</li>
+                <li>Serve hot with rice or cornbread.</li>
+            </ol>
+        </section>
+        <a href="recipes.html" class="go-back-btn">Go Back</a>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/recipes.js" defer></script>
+</body>
+</html>

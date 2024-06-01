@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuadorian Recipes Delight</title>
+    <meta name="description" content="WDD 131 - Final Project. Romel Patino.">
+    <meta name="author" content="Romel Patino">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/recipes.css">
+</head>
+<body>
+    <header>
+        <h1>Ecuadorian Recipes Delight</h1>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="recipes.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="hamburger" class="hamburger">&#9776;</button>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for recipes...">
+        </div>
+    </header>
+    <main>
+        <section class="recipe-grid">
+            <div class="recipe-card" onclick="flipCard(this)" data-name="Guatita">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/guatita.jpg" alt="Guatita">
+                        <h3>Guatita</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Guatita: A savory stew made with beef tripe simmered in a creamy peanut sauce with potatoes and served with rice.</p>
+                        <a href="/guatita.html" class="continue-btn" onclick="event.stopPropagation()">Continue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card" onclick="flipCard(this)" data-name="Encebollado">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/encebollado.webp" alt="Encebollado">
+                        <h3>Encebollado</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Encebollado: Hearty fish soup made with tuna, onions, tomatoes, and cilantro, seasoned with lime juice and aji criollo (hot sauce). Perfect for a comforting meal.</p>
+                        <a href="/encebollado.html" class="continue-btn" onclick="event.stopPropagation()">Continue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card" onclick="flipCard(this)" data-name="Papas con Cuero">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/papaconcuero.jpg" alt="Papa con Cuero">
+                        <h3>Papas con Cuero</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Papas con Cuero: Sliced potatoes cooked with pork belly, onions, tomatoes, and spices until tender and flavorful. Served as a hearty and comforting dish.</p>
+                        <a href="/papasconcuero.html" class="continue-btn" onclick="event.stopPropagation()">Continue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card" onclick="flipCard(this)" data-name="Llapingachos">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/llapingachos.webp" alt="Llapingachos">
+                        <h3>Llapingachos</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Llapingachos: Traditional Ecuadorian potato patties stuffed with cheese and grilled until golden brown. Served with a spicy peanut sauce.</p>
+                        <a href="/llapingachos.html" class="continue-btn" onclick="event.stopPropagation()">Continue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card" onclick="flipCard(this)" data-name="Fritada">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/fritada.jpg" alt="Fritada">
+                        <h3>Fritada</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Fritada: Succulent pork belly marinated in a flavorful blend of spices, then slow-cooked until tender and crispy. Served with mote (hominy) and llapingachos (potato cakes).</p>
+                        <a href="/fritada.html" class="continue-btn" onclick="event.stopPropagation()">Continue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card" onclick="flipCard(this)" data-name="Ceviche de Camaron">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/cevichecamaron.webp" alt="Ceviche de Camaron">
+                        <h3>Ceviche de Camaron</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Ceviche de Camaron: Fresh shrimp marinated in zesty lime juice, mixed with onions, tomatoes, and cilantro. Served chilled with avocado slices and corn chips.</p>
+                        <a href="/cevichedecamaron.html" class="continue-btn" onclick="event.stopPropagation()">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/recipes.js" defer></script>
+</body>
+</html>

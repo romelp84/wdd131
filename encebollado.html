@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuadorian Recipes Delight</title>
+    <meta name="description" content="WDD 131 - Final Project. Romel Patino.">
+    <meta name="author" content="Romel Patino">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/recipes.css">
+</head>
+<body>
+    <header>
+        <h1>Ecuadorian Recipes Delight</h1>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="recipes.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="hamburger" class="hamburger">&#9776;</button>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for recipes...">
+        </div>
+    </header>
+    <main>
+        <h1>Encebollado Recipe</h1>
+        <img src="images/encebollado.webp" alt="Encebollado Header Image" width="600" height="200">
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 cans (5 oz) tuna in water, drained</li>
+                <li>4 cups fish or chicken broth</li>
+                <li>1 red onion, thinly sliced</li>
+                <li>2 tomatoes, diced</li>
+                <li>1 bunch cilantro, chopped</li>
+                <li>2 tablespoons ketchup</li>
+                <li>2 tablespoons lime juice</li>
+                <li>1 tablespoon hot sauce (aji criollo)</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+        </section>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>In a large pot, bring fish or chicken broth to a boil. Add sliced red onions and cook until softened.</li>
+                <li>Add diced tomatoes and chopped cilantro to the pot. Stir in ketchup, lime juice, and hot sauce.</li>
+                <li>Season with salt and pepper to taste. Simmer for about 10 minutes.</li>
+                <li>Add drained tuna to the pot and cook for an additional 5 minutes.</li>
+                <li>Serve hot with boiled yuca or plantain chips.</li>
+            </ol>
+        </section>
+        <a href="recipes.html" class="go-back-btn">Go Back</a>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/recipes.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuadorian Recipes Delight</title>
+    <meta name="description" content="WDD 131 - Final Project. Romel Patino.">
+    <meta name="author" content="Romel Patino">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/recipes.css">
+</head>
+<body>
+    <header>
+        <h1>Ecuadorian Recipes Delight</h1>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="recipes.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="hamburger" class="hamburger">&#9776;</button>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for recipes...">
+        </div>
+    </header>
+    <main>
+        <h1>Guatita Recipe</h1>
+        <img src="images/guatita.jpg" alt="Guatita Header Image">
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>4 large potatoes, peeled and chopped</li>
+                <li>1 cup of cheese (queso fresco or mozzarella), grated</li>
+                <li>1/4 cup of finely chopped onion</li>
+                <li>1 teaspoon of achiote powder</li>
+                <li>Salt to taste</li>
+                <li>Oil for frying</li>
+            </ul>
+        </section>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Boil the potatoes until they are soft. Drain and mash them in a bowl.</li>
+                <li>Add the grated cheese, chopped onion, achiote powder, and salt to the mashed potatoes. Mix well until everything is combined.</li>
+                <li>Divide the mixture into small portions and shape them into flat discs.</li>
+                <li>Heat oil in a frying pan over medium heat. Fry the llapingachos until they are golden brown on both sides.</li>
+                <li>Serve hot with aji sauce and avocado slices.</li>
+            </ol>
+        </section>
+        <a href="recipes.html" class="go-back-btn">Go Back</a>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/recipes.js" defer></script>
+</body>
+</html>

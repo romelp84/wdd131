@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuadorian Recipes Delight</title>
+    <meta name="description" content="WDD 131 - Final Project. Romel Patino.">
+    <meta name="author" content="Romel Patino">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/recipes.css">
+</head>
+<body>
+    <header>
+        <h1>Ecuadorian Recipes Delight</h1>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="recipes.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="hamburger" class="hamburger">&#9776;</button>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for recipes...">
+        </div>
+    </header>
+    <main>
+        <h1>Ceviche de Camaron Recipe</h1>
+        <img src="images/cevichecamaron.webp" alt="Ceviche de Camaron Header Image" width="600" height="200">
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 lb (450 g) medium shrimp, peeled and deveined</li>
+                <li>1 red onion, finely chopped</li>
+                <li>4 tomatoes, diced</li>
+                <li>1 bunch cilantro, chopped</li>
+                <li>2-3 jalapeno peppers, seeded and diced</li>
+                <li>1 cup lime juice</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+        </section>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Bring a pot of salted water to a boil. Add shrimp and cook until they turn pink, about 2-3 minutes. Drain and cool.</li>
+                <li>In a large bowl, combine shrimp, red onion, tomatoes, cilantro, jalapeno peppers, and lime juice. Mix well.</li>
+                <li>Season with salt and pepper to taste. Cover and refrigerate for at least 30 minutes before serving.</li>
+                <li>Serve chilled with crackers or tortilla chips.</li>
+            </ol>
+        </section>
+        <a href="recipes.html" class="go-back-btn">Go Back</a>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/recipes.js" defer></script>
+</body>
+</html>
